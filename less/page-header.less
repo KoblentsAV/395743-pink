@@ -1,3 +1,20 @@
-.page-header {
+.page-header__inner {
+  .container(320px; 0 20px);
+  height: 110px;
   background-color: @midnight-color;
+}
+
+@media (min-width: 660px) {
+  .page-header__inner {
+    display: flex;
+    .container(660px; 0 20px);
+    background-color: @midnight-color;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-header__inner {
+    .container(960px; 0 20px);
+    background-color: @midnight-color;
+  }
 }

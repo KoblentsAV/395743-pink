@@ -27,8 +27,4 @@
   ],
   "engines": {
     "node": "6.10"
-  },
-  "dependencies": {
-    "normalize.less": "^1.0.0"
-  }
 }
