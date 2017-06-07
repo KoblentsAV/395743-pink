@@ -1,3 +1,21 @@
-.download__inner {
-  background-color: @midnight-color;
+.download {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
+  .download__inner {
+    .container(320px; 0 20px);
+  }
+
+  @media (min-width: 660px) {
+      .download__inner {
+      .container(660px; 0 20px);
+    }
+  }
+
+  @media (min-width: 960px) {
+      .download__inner {
+      .container(960px; 0 10px);
+    }
+  }
