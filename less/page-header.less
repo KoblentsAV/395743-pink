@@ -1,23 +1,21 @@
 .page-header {
-  background-color: @midnight-color;
 }
 
 .page-header__inner {
-  .container(320px; 0 20px);
-  display: flex;
-  justify-content: space-around;
-  height: 65px;
+  .container(320px);
+  min-height: 65px;
+  background-color: @midnight-color;
 }
 
 @media (min-width: 660px) {
   .page-header__inner {
-    .container(660px; 0 20px);
-    height: 110px;
+    .container(660px);
+    min-height: 110px;
   }
 }
 
 @media (min-width: 960px) {
   .page-header__inner {
-    .container(960px; 0 10px);
+    .container(960px);
   }
 }
