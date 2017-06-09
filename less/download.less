@@ -1,9 +1,11 @@
 .download {
-  min-height: 400px;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .download__button {
   width: 150px;
+  margin: auto;
   padding-top: 5px;
   padding-right: 20px;
   padding-bottom: 5px;
@@ -12,19 +14,16 @@
   border-radius: 25px;
 }
 
-  .download__inner {
-    .container(320px);
-    padding: auto;
-  }
+.download__list {
+  display: flex;
+  justify-content: center;
+}
 
-  @media (min-width: 660px) {
-      .download__inner {
-      .container(660px);
-    }
-  }
+.download__icon {
+  margin-right: 10px;
+}
 
-  @media (min-width: 960px) {
-      .download__inner {
-      .container(960px);
-    }
-  }
+.download__description {
+  font-weight: lighter;
+  color: @default-color;
+}

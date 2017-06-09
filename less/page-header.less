@@ -1,21 +1,12 @@
 .page-header {
-}
-
-.page-header__inner {
-  .container(320px);
-  min-height: 65px;
+  position: relative;
   background-color: @midnight-color;
 }
 
-@media (min-width: 660px) {
-  .page-header__inner {
-    .container(660px);
-    min-height: 110px;
-  }
-}
-
-@media (min-width: 960px) {
-  .page-header__inner {
-    .container(960px);
-  }
+.page-header__hero {
+  width: auto;
+  min-height: 400px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
