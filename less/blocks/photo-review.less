@@ -1,3 +1,37 @@
 .photo-review {
+  margin-bottom: 20px;
   background-color: @whitesmoke-color;
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+}
+
+.photo-review--of-the-day {
+  outline: 1px solid black;
+  width: 100%;
+}
+
+.photo-review__panorama {
+  text-align: center;
+}
+
+.photo-review__username {
+  font-weight: 700;
+}
+
+.photo-review__time-ago {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.photo-review__username,
+.photo-review__user-text {
+  padding-left: 20px;
+}
+
+.photo-review__like {
+  font-size: 12px;
+  color: #d22856;
+  text-transform: uppercase;
 }
