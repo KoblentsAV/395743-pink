@@ -3,7 +3,7 @@
   padding-bottom: 20px;
   @media (min-width: 960px) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 }
@@ -96,12 +96,16 @@
 
 
 .form-area__achievements {
+  background-color: @whitesmoke-color;
   @media (min-width: 660px) {
     border: 2px solid #e5e5e5;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 50px;
     padding-right: 60px;
     padding-bottom: 50px;
     padding-left: 60px;
+    background-color: @default-color;
   }
 }
 
@@ -183,20 +187,14 @@
 }
 
 .form-area__your-emotions {
-  @media (min-width: 960px) {
-    flex-basis: 100%;
-  }
+  flex-basis: 100%;
+}
+
+.form-area__review {
+  resize: none;
 }
 
 .form-area__your-emotions textarea {
   box-sizing: border-box;
   width: 100%;
-}
-
-.form-area__achievements {
-  background-color: @whitesmoke-color;
-}
-
-.form-area__which-programm {
-  background-color: @whitesmoke-color;
 }
