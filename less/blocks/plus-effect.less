@@ -1,0 +1,47 @@
+.plus-effect {
+  display: none;
+  @media (min-width: 660px) {
+    display: block;
+    background-color: @default-color;
+  }
+  @media (min-width: 960px) {
+    background-color: inherit;
+  }
+}
+
+.plus-effect__inner {
+  display: flex;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline: 1px solid green;
+  padding: 0 20px;
+}
+
+.plus-effect__icon {
+  width: 320px;
+}
+
+.plus-effect__description {
+  width: 320px;
+  @media (min-width: 960px) {
+    width: 500px;
+  }
+}
+
+.plus-effect__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.plus-effect__subtitle {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.plus-effect__more-info a {
+  text-decoration: underline;
+  color: #d22856;
+}

@@ -2,128 +2,154 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__inner">
-        <a  href="#" class="page-header__logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
-        </a>
-      </div>
       <nav class="main-nav">
-        <ul class="main-nav__list main-nav__list--open">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item"><a href="#">Фотографии</a></li>
-          <li class="main-nav__item"><a href="#">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">html academy</a></li>
-        </ul>
+        <div class="container">
+          <div class="main-nav__inner">
+            <div class="main-nav__logo">
+              <a  href="#">
+                <img src="http://placehold.it/150x100" width="150" height="40" alt="Pink">
+              </a>
+            </div>
+            <ul class="main-nav__list main-nav__list--open">
+              <li class="main-nav__item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="#">html academy</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
+      <div class="container">
+        <div class="header-title">
+          <p class="header-title__photo-page header-title__photo-page--hidden">
+            Фотографии<br>пользователей
+          </p>
+          <p class="header-title__form-page">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </p>
+        </div>
+      </div>
     </header>
     <main class="form-page">
-      <div class="form-page__promo">
-        Конкурс на самое безбашенное путешествие с Пинк
-      </div>
-      <section class="feedback">
-        <p class="feedback__title">
-          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        </p>
-        <form class="form-area" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-area__full-name">
-            <label>
-              Фамилия:
-              <input type="text" name="last-name" placeholder="Укажите фамилию*">
-            </label>
-            <label>
-              Имя:
-              <input type="text" name="first-name" placeholder="Введите ваше имя*">
-            </label>
-            <label>
-              Отчество:
-              <input type="text" name="middle-name" placeholder="Ну и отчество тоже*">
-            </label>
-          </fieldset>
-          <fieldset class="form-area__achievements">
-            <p class="form-area__title">
-              Ваши безбашенные достижения в путешествии
-            </p>
-            <label>
-              <input type="checkbox" name="selfi" checked>
-              Сделал селфи с акулой
-            </label>
-            <label>
-              <input type="checkbox" name="beach" checked>
-              Обгорел на пляже
-            </label>
-            <label>
-              <input type="checkbox" name="chuck-norris">
-              Видел Чака Норриса
-            </label>
-            <label>
-              <input type="checkbox" name="souvenirs">
-              Накупил сувениров
-            </label>
-            <label>
-              <input type="checkbox" name="save-tower" checked>
-              Удержал башню
-            </label>
-            <label>
-              <input type="checkbox" name="destroy-hotel">
-              Разгромил отель
-            </label>
-          </fieldset>
-          <fieldset class="form-area__contacts">
-            <label>
-              Номер телефона
-              <input type="number" name="user-number" placeholder="Номер, пожалуйста">
-            </label>
-            <label>
-              Адрес почты
-              <input type="email" name="user-email" placeholder="Введите почту*">
-            </label>
-          </fieldset>
-          <fieldset class="form-area__which-programm">
-            <p class="form-area__title">
-              С каким приложением путешествовали?
-            </p>
-            <label>
-              <input type="radio" name="system-select" value="ios">
-              Pink для iOS
-            </label>
-            <label>
-              <input type="radio" name="system-select" value="android">
-              Pink для Android
-            </label>
-            <label>
-              <input type="radio" name="system-select" value="windows-phone">
-              Pink для Windows Phone
-            </label>
-          </fieldset>
-          <div class="form-area__your-emotions"
-            <textarea class="form-area__review" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+      <div class="container">
+        <section class="feedback">
+          <p class="feedback__title">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+              <span class="feedback__subtitle">Пожалуйста, заполните форму ниже:</span>
+          </p>
+          <form class="form-area" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="form-area__full-name">
+              <label class="form-area__label">
+                <span>Фамилия:</span>
+                <input type="text" name="last-name" placeholder="Укажите фамилию*">
+              </label>
+              <label class="form-area__label">
+                  <span>Имя:</span>
+                <input type="text" name="first-name" placeholder="Введите ваше имя*">
+              </label>
+              <label class="form-area__label">
+                  <span>Отчество:</span>
+                <input type="text" name="middle-name" placeholder="Ну и отчество тоже*">
+              </label>
+            </fieldset>
+            <fieldset class="form-area__achievements">
+              <legend class="form-area__title">
+                Ваши безбашенные достижения в путешествии
+              </legend>
+              <div class="form-area__achievements-inner">
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="selfi" checked>
+                  Сделал селфи с акулой
+                </label>
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="beach" checked>
+                  Обгорел на пляже
+                </label>
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="chuck-norris">
+                  Видел Чака Норриса
+                </label>
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="souvenirs">
+                  Накупил сувениров
+                </label>
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="save-tower" checked>
+                  Удержал башню
+                </label>
+                <label class="form-area__radio-checkbox-label">
+                  <input type="checkbox" name="destroy-hotel">
+                  Разгромил отель
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-area__contacts">
+              <div class="form-area__contacts-inner">
+                <label class="form-area__label">
+                  <span>Номер телефона</span>
+                  <input type="number" name="user-number" placeholder="Номер, пожалуйста">
+                </label>
+                <label class="form-area__label">
+                  <span>Адрес почты</span>
+                  <input type="email" name="user-email" placeholder="Введите почту*">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-area__which-programm">
+              <legend class="form-area__title">
+                С каким приложением путешествовали?
+              </legend>
+              <label class="form-area__radio-checkbox-label">
+                <input type="radio" name="system-select" value="ios">
+                Pink для iOS
+              </label>
+              <label class="form-area__radio-checkbox-label">
+                <input type="radio" name="system-select" value="android">
+                Pink для Android
+              </label>
+              <label class="form-area__radio-checkbox-label">
+                <input type="radio" name="system-select" value="windows-phone">
+                Pink для Windows Phone
+              </label>
+            </fieldset>
+            <fieldset class="form-area__your-emotions">
+              <legend class="form-area__title">
+                Опишите свои эмоции
+              </legend>
+              <textarea class="form-area__review" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях">
+              </textarea>
+            </fieldset>
             <div class="button">
               <input type="submit" value="Отправить форму">
             </div>
             <p class="form-area__required-mark">
               * — Обязательные поля
             </p>
-        </div>
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
-      <a  href="#" class="main-footer__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__icon"><a href="#" title="twitter"></a>Twitter</li>
-        <li class="social-list__icon"><a href="#" title="facebook"></a>Facebook</li>
-        <li class="social-list__icon"><a href="#" title="youtube"></a>Youtube</li>
-      </ul>
-      <div class="copyright">
-          Разработано
+      <div class=container>
+        <div class="main-footer__inner">
+          <a  href="#" class="main-footer__logo">
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
+          </a>
+          <ul class="social-list">
+            <li class="social-list__icon"><a href="#" title="twitter">Twitter</a></li>
+            <li class="social-list__icon"><a href="#" title="facebook">Facebook</a></li>
+            <li class="social-list__icon"><a href="#" title="youtube">Youtube</a></li>
+          </ul>
+          <div class="copyright">
+              Разработано
+          </div>
+        </div>
       </div>
     </footer>
   </body>
