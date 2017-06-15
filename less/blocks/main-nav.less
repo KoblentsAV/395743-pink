@@ -1,23 +1,25 @@
 .main-nav {
   margin: 0 auto;
+  width: 320px;
   text-align: center;
   background-color: rgba(0, 0, 0, .3);
-}
-
-.main-nav__inner {
+  @media (min-width: 660px) {
+    width: 660px;
+  }
   @media (min-width: 960px) {
+    width: 920px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
   }
 }
 
 .main-nav__logo {
-  padding: 0 20px;
+  padding: 20px 20px;
   text-align: left;
 }
 
 .main-nav__list {
-  display: none;
   @media (min-width: 960px) {
     display: flex;
     justify-content: space-between;
