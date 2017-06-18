@@ -19,8 +19,33 @@
 }
 
 .main-nav__logo {
-  padding: 20px 20px;
-  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  padding-top: 21.5px;
+  padding-right: 20px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  @media (min-width: 660px) {
+    width: 620px;
+    padding-top: 43.5px;
+    padding-bottom: 34px;
+  }
+  @media (min-width: 960px) {
+    margin: 0;
+    width: auto;
+  }
+}
+
+.main-nav__burger {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.main-nav__burger--open {
+  display: none;
 }
 
 .main-nav__list {
@@ -48,4 +73,11 @@
   color: white;
   text-transform: uppercase;
   line-height: 32px;
+}
+
+.main-nav__top-menu {
+  border-bottom: 1px solid #000000;
+  @media (min-width: 960px) {
+    border: none;
+  }
 }

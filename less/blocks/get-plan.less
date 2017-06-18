@@ -2,15 +2,26 @@
   overflow-x: hidden;
   line-height: 30px;
   background-color: @whitesmoke-color;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top;
+  height: auto;
 }
 
 .get-plan__inner {
   display: flex;
   justify-content: center;
+  padding-top: 91px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
   @media (min-width: 660px) {
     margin: 0 auto;
-    padding: 0 20px;
-    width: 660px;
+    padding-top: 90px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 620px;
   }
   @media (min-width: 960px) {
     width: 960px;
@@ -40,6 +51,8 @@
 }
 
 .get-plan__title {
+  padding-top: 15px;
+  padding-bottom: 23px;
   width: 278px;
   background-color: @midnight-color;
   border: 1px solid #e5e5e5;
@@ -51,23 +64,74 @@
   color: @default-color;
   @media (min-width: 660px) {
     width: 153px;
+    padding-top: 13px;
+    padding-bottom: 7px;
   }
   @media (min-width: 960px) {
     width: 235px;
   }
 }
 
+.get-plan__name {
+  @media (min-width: 660px) {
+    font-size: 16px;
+  }
+}
+
 .get-plan__price {
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
+  @media (min-width: 660px) {
+    font-size: 18px;
+  }
 }
 
 .get-plan__aviable-options {
-  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  padding-left: 22px;
   border: 1px solid #e5e5e5;
   background-color: @default-color;
+  @media (min-width: 660px) {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 17px;
+    text-transform: none;
+  }
 }
 
 .get-plan__aviable-options:last-child {
   border-bottom: 2px solid #e5e5e5;
+}
+
+.get-plan__pagination {
+  margin: 0 auto;
+  padding: 9px;
+  padding-bottom: 39px;
+  width: 280px;
+  text-align: center;
+  @media (min-width: 660px) {
+    padding-bottom: 11px;
+  }
+}
+
+.get-plan__pagination-button {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin-right: 16px;
+  background: rgba(40,54,69,.3);
+  border-radius: 50%;
+  user-select: none;
+}
+
+.get-plan__pagination-button:last-child {
+  margin-right: 0;
+}
+
+.get-plan__pagination-button--active {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #283645;
 }
