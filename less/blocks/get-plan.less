@@ -87,21 +87,52 @@
 }
 
 .get-plan__aviable-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 14px;
+  padding-right: 17px;
   padding-bottom: 15px;
   padding-left: 22px;
   border: 1px solid #e5e5e5;
   background-color: @default-color;
   @media (min-width: 660px) {
+    justify-content: center;
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 17px;
+    text-align: center;
     text-transform: none;
   }
 }
 
 .get-plan__aviable-options:last-child {
   border-bottom: 2px solid #e5e5e5;
+}
+
+.get-plan__aviable-options--on::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 24px;
+  background-image: url(../img/icon-yes.svg);
+  background-repeat: no-repeat;
+  @media (min-width: 660px) {
+    margin-left: 5px;
+  }
+}
+
+.get-plan__aviable-options--off::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 29px;
+  background-image: url(../img/icon-no.svg);
+  background-repeat: no-repeat;
+}
+
+.get-plan__aviable-options--extra {
+  justify-content: flex-start;
 }
 
 .get-plan__pagination {
