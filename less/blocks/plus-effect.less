@@ -14,6 +14,10 @@
   margin: auto;
   padding-top: 96px;
   padding-bottom: 20px;
+  @media (min-width: 960px) {
+    padding-top: 113px;
+    padding-bottom: 113px;
+  }
 }
 
 .plus-effect__icon {
@@ -22,8 +26,12 @@
 
 .plus-effect__description {
   width: 320px;
+  @media (min-width: 660px) {
+  padding-right: 4px;
+  }
   @media (min-width: 960px) {
-    width: 500px;
+    padding-left: 46px;
+    width: 530px;
   }
 }
 
@@ -32,14 +40,49 @@
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
+  @media (min-width: 960px) {
+    margin-bottom: 24px;
+    line-height: 30px;
+  }
 }
 
 .plus-effect__subtitle {
+  @media (min-width: 660px) {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 960px) {
+    margin-bottom: 31px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.plus-effect__title br:last-child {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.plus-effect__subtitle br:first-child {
+  display: none;
+  @media (min-width: 960px) {
+    display: inline;
+  }
+}
+
+.plus-effect__subtitle br:last-child {
   margin-right: 5px;
   margin-bottom: 10px;
+  @media (min-width: 960px) {
+    display: none;
+  }
 }
 
 .plus-effect__more-info a {
   text-decoration: underline;
   color: #d22856;
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

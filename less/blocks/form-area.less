@@ -24,8 +24,11 @@
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 18px;
   width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   border: 2px solid #e5e5e5;
   @media (min-width: 660px) {
     width: auto;
@@ -44,7 +47,10 @@
 }
 
 .form-area__label span {
-  padding-left: 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  line-height: 30px;
     @media (min-width: 660px) {
       padding-left: 0;
       margin-right: 15px;
@@ -169,8 +175,9 @@
   border: 2px solid #e5e5e5;
 }
 
-.form-area__which-programm {
+.form-area__which-programm-inner {
   display: flex;
+  flex-direction: column;
   @media (min-width: 660px) {
     border: 2px solid #e5e5e5;
   }

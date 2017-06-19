@@ -11,6 +11,10 @@
     padding-top: 105px;
     padding-bottom: 11px;
   }
+  @media (min-width: 960px) {
+    padding-top: 185px;
+    padding-bottom: 0;
+  }
 }
 
 .reviews__list {
@@ -26,6 +30,9 @@
     display: flex;
     flex-direction: column-reverse;
     flex-basis: 620px;
+  }
+  @media (min-width: 960px) {
+    flex-basis: 940px;
   }
 }
 
@@ -51,6 +58,10 @@
   @media (min-width: 660px) {
     display: block;
   }
+  @media (min-width: 960px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .reviews__description {
@@ -61,6 +72,18 @@
   @media (min-width: 960px) {
     padding-left: 100px;
     padding-right: 100px;
+  }
+}
+
+.reviews__description span {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.reviews__pagination {
+  @media (min-width: 960px) {
+    display: none;
   }
 }
 
