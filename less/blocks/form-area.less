@@ -8,13 +8,10 @@
   }
 }
 
-.form-area fieldset {
-  margin-bottom: 30px;
-}
-
 .form-area__full-name {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 28px;
   @media (min-width: 960px) {
     order: -3;
   }
@@ -58,12 +55,18 @@
 }
 
 .form-area__title {
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-top: 38px;
+  padding-right: 120px;
+  padding-left: 120px;
   text-align: center;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+  background-color: @whitesmoke-color;
+}
+
+.form-area__achievements .form-area__title {
+  margin-bottom: 38px;
 }
 
 .form-area__achievements-inner {
@@ -74,6 +77,46 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.form-area__achievements-inner input[type="checkbox"] {
+	display: none;
+}
+
+.form-area__achievements-inner input[type="checkbox"] + label {
+	display: block;
+	position: relative;
+  margin-bottom: 61px;
+	line-height: 21px;
+	padding-left: 69px;
+	cursor: pointer;
+}
+
+.form-area__achievements-inner input[type="checkbox"] + label:last-child {
+  margin-bottom: 51px;
+}
+
+.form-area__achievements-inner input[type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+	width: 35px;
+	height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: @default-color;
+	top: -9px;
+	left: 0;
+}
+
+.form-area__achievements-inner input[type="checkbox"]:checked + label::after {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 24px;
+	background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-size: 75%;
+	top: 2px;
+	left: 8px;
 }
 
 .form-area__radio-checkbox-label {
@@ -102,17 +145,8 @@
 
 
 .form-area__achievements {
+  padding-top: 10px;
   background-color: @whitesmoke-color;
-  @media (min-width: 660px) {
-    border: 2px solid #e5e5e5;
-    margin-left: 0;
-    margin-right: 0;
-    padding-top: 50px;
-    padding-right: 60px;
-    padding-bottom: 50px;
-    padding-left: 60px;
-    background-color: @default-color;
-  }
 }
 
 .form-area__achievements label {
@@ -131,6 +165,8 @@
 .form-area__contacts-inner {
   display: flex;
   flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 27px;
   @media (min-width: 660px) {
     padding-left: 60px;
     padding-right: 60px;
@@ -170,9 +206,16 @@
   box-sizing: border-box;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 18px;
   width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
   border: 2px solid #e5e5e5;
+}
+
+.form-area__which-programm {
+  background-color: @whitesmoke-color;
 }
 
 .form-area__which-programm-inner {
